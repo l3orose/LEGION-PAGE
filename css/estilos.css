@@ -104,7 +104,7 @@ nav.main-menu {
 
 }
 
-.dropdown-content{
+div.dropdown-content{
 	display: none;
 	overflow: hidden;
 	font-size: 100px;
