@@ -44,7 +44,19 @@ img.logo {
 	width: 100%;
 	height: 100%;
 }
-
+.youtube {
+	width: 100%;
+	height: 380px;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+.dropdown:active .dropdown-content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: black;
+	
+}
 
 footer{
 	color: #e04b33;
