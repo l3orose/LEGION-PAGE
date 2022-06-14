@@ -12,26 +12,26 @@ html{
 }
 body {
 	background-image: url(../legion.jpg);
-	background-size: 100%;	
-	background-repeat: no-repeat;
-	font-size: 2rem;
-	min-width: 400px;
-	width: 100%;
-	
+	background-size: 100vh;	
 	
 }
-	.main-menu {
+.main-menu lu{
 	display: flex;
+	flex-direction: column;
 	background-color: black;
-}
- div.enlaces{
-	font-size: 10px;
-	text-align: center;
-	width: auto;
+	align-items: center;
 	
+}
+.dropdown-content{
+	display: none;
+	overflow: hidden;
+	font-size: 100px;
+	text-align: center;
+}
+.dropdown-content a {
+	font-size: 10px;
 }
 .main-menu a {
-	
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 3rem;
@@ -41,24 +41,10 @@ body {
 	margin-right: 10px;
 }
 img.logo {
-	width: 200px;
-	margin: 20px;
+	width: 100%;
+	height: 100%;
 }
-.main-content {
-	width: 100vw;
-	min-width: 300px;
-	height: 500px;
-}
-.articulo {
-	margin-top: 20px;
-	padding: 0 5px;
-	border-radius: 4px;
-	background-color: black;
-	color: #e04b33;
-}
-.foto {
-	width: 100vw;
-}
+
 
 footer{
 	color: #e04b33;
@@ -74,53 +60,72 @@ footer{
 
 header {
 	background-color: black;
-	width: 100vw;
+	height: 200px;
+		
+}
+body {
+	background-image: url(../legion.jpg);
+	background-size: 100%;	
+	background-repeat: no-repeat;
+}
+nav.main-menu {
 	display: flex;
+	width: 100%;
+	margin-left: 80px;
+	
 	
 }
+.main-menu lu{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: black;
 
-.reproductor {
-	width: 300px;
-	margin: 10px 0 100px 30px;
 }
-.main-menu {
-	margin: 0%;
-	padding: 0;
-	height: 4%;
-	display: inline-block;
-	border-radius: 4px;    
- }
 
-div.enlaces{
-	width: 100vw;
-	margin: 40px 0;
+.dropdown-content{
+	display: none;
+	overflow: hidden;
+	font-size: 100px;
+	text-align: center;
+}
+.dropdown-content a {
+	font-size: 10px;
+}
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: black;
 	
-
 }
+.dropdown:hover .dropdown-content a{
+	font-size: 30px;
+}
+
+
 .main-menu a {
-	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 5rem;
 	list-style: none;
 	color: white;
 	opacity: 0.7;
-	margin-right: 30px;
+	margin-right: 10px;
 	
 }
 .main-menu a:hover {
-	
 	opacity: 1;
 	transition-delay: 0.09s;
 }
 
 img.logo {
 	width: 20vw;
-	height: 8%;
-	float: left;	
+	height: 10%;
 	opacity: 0.9;
-	margin-left: 150px;
+	
 }
+
 
 .logo:hover {
 	opacity: 1;
@@ -128,39 +133,30 @@ img.logo {
 
 /* contenido principal --------------------*/
 .main-content {
-	display: flex;	
-	width: 20vw;
-	margin: 0 0 0 20px;
-	
-	
+	display: flex;
+	justify-content: space-around;
+}
+.main-content img {
+	display: flex;
+	width: 100px;
+}
+.reproductor {
+	width: 300px;
+	margin: 10px 0 100px 30px;
 }
 
-div.foto-perfil {
-	display: none;
-	width: 50vw;
+.youtube {
+	width: 500px;
+	height: 380px;
+	margin-top: 10px;
+	border-radius: 20px;
 }
-div.foto-perfil img {
-	margin-top: 5px;
-	border-radius: 4px;
-	width: 230px;
-	height: 250px;
-	float: right;
 
-}
 aside {
 	width: 40vw;
 	margin-top: 5px;
 	display: inline-block;
 	
-	
-}
-
-.articulo {
-	margin-top: 20px;
-	padding:5px;
-	border-radius: 4px;
-	background-color: #0c0c0c;
-	color: #e04b33;
 }
 
 
